@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Zeph</title>
+    <link rel="stylesheet" href="gaya.css">
+</head>
+<body>
+
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+<header>
+    <div class="logo">
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <h1>About Me</h1>
+    </div>
+
+    <button class="logout" onclick="location.href='index.html'">
+        Dashboard
+    </button>
+</header>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h2>Navigation</h2>
+        <button class="close-btn" onclick="toggleSidebar()">✕</button>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="anjay.html"> Experience</a></li>
+        <li><a href="about.html" class="active"> About Me</a></li>
+        <li><a href="contact.html"> Contact</a></li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+
+    <section class="hero">
+        <span class="hero-badge">Biography</span>
+        <h1>Hello, I'm Chafaneah</h1>
+        <h3>Called Zeph</h2>
+        <!-- Cyber Profile Frame -->
+        <div class="profile-container">
+            <div class="profile-avatar">
+                <img src="gweh.jpg" alt="Foto Zeph">
+            </div>
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>ONLINE</span>
+            </div>
+        </div>
+
+        <p>Siswa SMK yang berdedikasi tinggi dalam mendalami Networking, Cyber Security, dan Web Development.</p>
+    </section>
+
+    <div class="grid-layout">
+        <div class="card">
+            <h2>🎓 Education</h2>
+            <p><strong>SMKN Pertanian 1 Sukaraja</strong></p>
+            <p>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</p>
+            <div class="tags">
+                <span class="tag">Vocational High School</span>
+                <span class="tag">Sukabumi</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🎯 Career Goals</h2>
+            <p>Membangun karir profesional di industri IT global, memperluas wawasan internasional, serta mendirikan perusahaan teknologi di masa depan.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🛠️ Core Skills & Technologies</h2>
+        <div class="tags" style="margin-top: 10px;">
+            <span class="tag">Computer Networking</span>
+            <span class="tag">Cyber Security Fundamentals</span>
+            <span class="tag">HTML5 & CSS3</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">Python</span>
+            <span class="tag">Linux System Administration</span>
+            <span class="tag">MikroTik RouterOS</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Zeph. Crafted with precision.
+    </div>
+
+</div>
+
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    sidebar.classList.toggle("open");
+    overlay.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
